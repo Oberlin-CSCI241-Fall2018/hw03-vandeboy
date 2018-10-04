@@ -1,0 +1,31 @@
+Peng Gu
+10/03/2018
+
+I affirm that I've adhered to the Honor Code in this assignment.
+
+
+1. egrep "^[^aeiou]*[aeiou][^aeiou]*$" $WORDS
+2. egrep ".*a.*e.*i.*o.*u.*" $WORDS
+3. egrep "[a-z]{22}" $WORDS
+4. egrep "^.*(....).*\1.*$" $WORDS
+5. egrep "^(...).*\1$" $WORDS
+6. egrep "^([bcdfghjklmnpqrstvwxyz][aeiou]){3,}$" $WORDS
+7. egrep "^(.)(.)(.).*\3\2\1$" $WORDS 
+8. sed -E -i 's/snow fall|wind chill/summertime/g' filename
+9. sed -E -n '/^computer/,/^science/p' filename
+10. sed -E -i 's/\<([Tt])eh\>/\1he/g' filename
+11. sed -E -i 's/^(.*)(.)/\2\1/g' filename
+12. sed -E -n 's/.*\<([a-z]{1,})\>.*\<\1\>.*/\1/gp' filename
+13. sed -E -i 's/^\/\*(.*)\*\/$/\/\/\1/g' filename
+14. sed -E -n 's/cs 241/CSCI 241/gp' filename
+15. sed -E -n 's/[Cc][Ss]([Cc][Ii])?\s?241/CSCI 241/gp' filename
+16. sed -E -i 's/(.{20}).*/\1/g' filename
+17. sed -E -i 's/Robert(o)? (J. )?Hoyle/RJH/g' filename
+18. sed -E -i 's/([A-Z])[a-z]{1,} ([A-Z])[a-z]{1,}/\1\2/g' filename
+19. sed -E -i 's/\<([[:digit:]]{3})([[:digit:]]{3})([[:digit:]]{4})\>/\(\1\) \2-\3/g' filename
+20. wget --quiet -O- http://xkcd.com/ | sed -E -n 's/<img src="\/\/(.*)" title="(.*)" alt=.*/Image: \1\nTitle: \2/gp'
+
+Extra Credit:
+1. sed -E -i '/^\s{0,}\t{0,}#[^!].*/d' filename
+2. sed -E -n '/([0-9][^a-z]{0,}){10}/s/[^0-9]//gp' filename
+3. Order:   ^.?....[^e]$
